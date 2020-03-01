@@ -37,4 +37,22 @@ body {
   height: 100%;
 }
 
+.todo-sections {
+  display: flex;
+}
+.todo-sections > button {
+  flex: 1;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+.todo-sections > button:hover {
+  background-color: #bbb;
+  color: white;
+}
+.todo-sections > button.active {
+  background-color: #8cb691;
+}
+
 /*# sourceMappingURL=main.css.map */
