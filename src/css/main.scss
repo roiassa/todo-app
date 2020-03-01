@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: red;
+html, body {
+    height: 100%;
 }
 
-.div-input {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+body {
+    background-color:black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
+
+
+@import "todo-app.scss";
