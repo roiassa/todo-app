@@ -42,6 +42,7 @@ body {
 }
 .todo-sections > button {
   flex: 1;
+  height: 50px;
   cursor: pointer;
   background-color: white;
   border: 1px solid #ccc;
@@ -53,6 +54,23 @@ body {
 }
 .todo-sections > button.active {
   background-color: #8cb691;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+.todo-list .todo-item {
+  height: 30px;
+  display: flex;
+  border: 1px solid #eee;
+  align-items: center;
+}
+.todo-list .todo-item span {
+  width: 100%;
+}
+.todo-list .todo-item button {
+  width: 70px;
 }
 
 /*# sourceMappingURL=main.css.map */
