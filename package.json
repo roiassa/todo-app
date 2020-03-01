@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sass": "npx sass src/css/main.scss dist/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
