@@ -4,17 +4,22 @@
         flex: 1;
         height: 50px;
         cursor: pointer;
-        background-color:white;
+        background-color:#71c5bd;
         border: 1px solid #ccc;
-        transition: background-color 0.3s ease-in-out;
+
 
         &:hover {
-            background-color: #bbb;
+            background-color: #3C948B;
             color: white;
         }
 
         &.active {
-            background-color: #8cb691;
+            color: white;
+            background-color: #3C948B;
+            &:hover {
+               background-color:#71c5bd;
+               color: black;
+            }
         }
     }
 
