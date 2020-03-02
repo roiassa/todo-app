@@ -7,6 +7,11 @@
         border: 1px solid #eee;
         align-items: center;
 
+        .check {
+            display: none;
+            color: rgb(19, 207, 19);
+        }
+
         span {
             width: 100%;
         }
