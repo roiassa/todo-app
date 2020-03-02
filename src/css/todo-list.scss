@@ -12,7 +12,19 @@
         }
 
         button {
-            width: 70px;
+            width: 90px;
+            height: 18px;
+            color: white;
+            border-radius: 10px;
+            border-style: none;
+            background-color: #3C948B;
+            margin-right: 5px;
+            outline: none;
+            &:hover {
+                cursor: pointer;
+                color: black;
+                background-color: #71c5bd;
+            }
         }
     }
 }
