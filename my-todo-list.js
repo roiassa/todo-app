@@ -23,7 +23,6 @@ function checked(event) {
 
 function removeItem(event) {
     event.preventDefault();
-    const classAtt = this.getAttribute("class");
-    console.log(classAtt);
-    document.querySelector(".todo-item").remove(classAtt);
+    const toRemove = this.parentElement;
+    toRemove.remove();
 }
