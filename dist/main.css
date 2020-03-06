@@ -75,6 +75,9 @@ body {
   border: 1px solid #eee;
   align-items: center;
 }
+.todo-list .todo-item:hover {
+  background-color: #a09e9e;
+}
 .todo-list .todo-item .check {
   display: none;
   color: #13cf13;

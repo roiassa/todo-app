@@ -2,7 +2,6 @@ const done = document.querySelectorAll(".todo-change-action");
 const remove = document.querySelectorAll(".todo-remove");
 const vi = document.querySelectorAll(".check");
 
-console.log(vi);
 
 
 // localStorage.clear();
@@ -23,6 +22,7 @@ function checked(event) {
         checked = checked.previousElementSibling;
     }
     checked.style.display = "block";
+
     setStorage(vi);
 }
 
