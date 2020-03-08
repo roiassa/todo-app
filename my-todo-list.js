@@ -1,6 +1,8 @@
 const done = document.querySelectorAll(".todo-change-action");
 const remove = document.querySelectorAll(".todo-remove");
 const vi = document.querySelectorAll(".check");
+const topDone = document.querySelectorAll(".top-done")
+const listItems = document.querySelectorAll(".todo-item")
 
 
 
@@ -13,6 +15,8 @@ remove.forEach(element => {
     element.addEventListener("click", removeItem);
 })
 
+// topDone.addEventListener("click", done)
+
 
 function checked(event) {
     event.preventDefault();
@@ -23,17 +27,18 @@ function checked(event) {
     }
     checked.style.display = "block";
 
-    setStorage(vi);
+    setStorageNodeList(vi);
 }
 
 
-function setStorage(nodeList) {
+function setStorageNodeList(nodeList) {
     const newArr = []
     nodeList.forEach((item, index) => {
         if (window.getComputedStyle(item).display === "block") {
             newArr.push(index);
         }
-    })
+    }
+    )
     let stringifiedArr = JSON.stringify(newArr);
     localStorage.setItem("viList", stringifiedArr);
 }
@@ -56,7 +61,39 @@ readStorage(vi);
 
 
 function removeItem(event) {
+    // const removedArr = [];
     event.preventDefault();
     const toRemove = this.parentElement;
     toRemove.remove();
 }
+//     if (toRemove.remove()) {
+//         removedArr.push(toRemove);
+//         console.log(removedArr)
+//     }
+//     setStorageRemoved(removedArr);
+// }
+
+// function setStorageRemoved(removed) {
+//     const newArr = []
+//     removed.forEach((item, index) => {
+//         if (window.onclick(item)) {
+//             newArr.push(index);
+//         }
+//         let stringfiedArr = JSON.stringify(newArr);
+//         localStorage.setItem('removedItem', stringfiedArr);
+//     })
+
+// }
+
+// function readStorageRemoved(removed) {
+//     let getRemoved = localStorage.getItem('removedItem');
+//     let unstringfiedArr = JSON.parse(getRemoved);
+//     if (unstringfiedArr === null) {
+//         return;
+//     }
+//     removed.forEach((item, index) => {
+//         if (unstringfiedArr.includes(index)) {
+//             item.remove();
+//         }
+//     })
+// }
