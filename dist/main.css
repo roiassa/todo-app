@@ -101,4 +101,9 @@ body {
   background-color: #71c5bd;
 }
 
+.done-box {
+  display: block;
+  z-index: 1;
+}
+
 /*# sourceMappingURL=main.css.map */

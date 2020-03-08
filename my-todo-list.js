@@ -1,7 +1,9 @@
 const done = document.querySelectorAll(".todo-change-action");
 const remove = document.querySelectorAll(".todo-remove");
 const vi = document.querySelectorAll(".check");
-const topDone = document.querySelectorAll(".top-done")
+const topDone = document.querySelector(".top-done")
+const doneBox = document.querySelector(".done-box");
+console.log(doneBox);
 const listItems = document.querySelectorAll(".todo-item")
 
 
@@ -15,7 +17,7 @@ remove.forEach(element => {
     element.addEventListener("click", removeItem);
 })
 
-// topDone.addEventListener("click", done)
+topDone.addEventListener("click", doneScreen);
 
 
 function checked(event) {
@@ -97,3 +99,10 @@ function removeItem(event) {
 //         }
 //     })
 // }
+
+
+function doneScreen(event) {
+    event.preventDefault();
+
+    doneBox.style.display = "none";
+}
